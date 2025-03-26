@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #475f45; /* Koyu yeşil */
+  --primary-dark: #343d33; /* Daha koyu yeşil */
+  --primary-light: #5a7a58; /* Açık yeşil */
+  --accent-color: #e67e22; /* Turuncu - sadece vurgu için */
+  --text-color: #333;
+  --text-light: #666;
+  --background-color: #f5f7f2; /* Açık yeşilimsi gri */
+  --card-color: #fff;
+  --border-color: #d8e0d5; /* Açık yeşil border */
+  --shadow-color: rgba(52, 61, 51, 0.1); /* Koyu yeşil gölge */
+  --success-color: #4caf50;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+@keyframes bounceRight {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
+
